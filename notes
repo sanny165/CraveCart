@@ -1,0 +1,2 @@
+npm i axios react-toastify react-router-dom
+axios for sending http req , communicating wid other applications

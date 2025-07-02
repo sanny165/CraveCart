@@ -1,0 +1,129 @@
+.footer{
+    display:flex;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    flex-direction: column;
+    align-items:center;
+    padding:2vw 2.5vw;
+    padding-top: 3.5vw;
+    margin-top:10vw;
+}
+.footer-content{ 
+    width:100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:5vw;
+}
+.footer-right,.footer-center,.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap:0.7vw;
+}
+.footer-right,.footer-center{
+    align-items: center;
+}
+
+.footer-right li,.footer-center li{
+    margin:1.5vw;
+    cursor: pointer;
+    list-style: none; 
+}
+
+.footer-right h2,.footer-center h2{
+    font-size: 2 rem;
+}
+.footer-socialicons img{
+    width:6.5vw;
+    margin: 1vw;
+}
+.footer-name{
+    display: flex;
+    align-items: center;
+    justify-items:flex-start
+
+}
+.footer-name img{
+    width: 10vw;
+    margin-right: 1vw;
+}
+.footer-name h3{
+    font-size: 3rem;
+    color: white;
+}
+.footer-socialicons img{
+    width: 3.6vw;
+    cursor: pointer;
+}
+.footer-left p{
+    font-size: 1.65rem;
+    margin: 1vw 0;
+}
+.footer hr{
+    width: 100%;
+    margin-block: 1vw 0;
+    border:none;
+    background-color: #e9e1e1;
+    height: 0.05vw;;
+}
+@media (max-width: 770px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Enforce stacking order: left -> center -> right */
+  .footer-left {
+    order: 1;
+    align-items: center;
+    margin-top: 3vw;
+  }
+  .footer-left p{
+    margin-inline: 10vw;
+  } 
+
+  .footer-center {
+    order: 2;
+    align-items: center;
+  }
+
+  .footer-right {
+    order: 3;
+    align-items: center;
+  }
+
+  .footer-name {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-name img {
+    width: 18vw;
+    margin: 0 0 1vw 0;
+  }
+
+  .footer-name h3 {
+    font-size: 2.2rem;
+  }
+
+  .footer-left p {
+    font-size: 1.4rem;
+  }
+
+  .footer-socialicons img {
+    width: 7vw;
+  }
+
+  .footer-right li,
+  .footer-center li {
+    margin: 2vw 0;
+  }
+  #copy{
+    margin:3vw;
+  }
+  .footer hr{
+    margin-top: 2vw;;
+  }
+}

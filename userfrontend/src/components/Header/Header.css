@@ -1,0 +1,101 @@
+.Header {
+    height: 34vw;
+    margin: 1.5vw auto;
+    background: url('../../assets/header.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    color: whitesmoke;
+    border-radius: 12px;
+}
+
+.Header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 50%;
+    left: 5vw;
+    top: 2vw;
+    bottom: 2vw;
+    animation: fadein 3s;
+}
+
+.Header-content h2 {
+    font-weight: 500;
+    font-size: max(4.5vw, 2.2rem);
+    text-shadow: 2px 2px 2px rgb(113, 8, 8),
+                 -0.7px 0.7px 0 grey,
+                 0.7px -0.7px 0 grey,
+                 -0.7px -0.7px 0 grey;
+}
+
+.Header-content p {
+    font-size: 1.6vw;
+    margin: 1vw 0vw;
+}
+
+.Header-content button {
+    border: none;
+    padding: 1vw 2.3vw;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+/* ------------ Responsive Media Queries ------------ */
+
+/* Below 900px */
+@media (max-width: 900px) {
+    .Header {
+        height: 43vw;
+    }
+
+    .Header-content {
+        margin-top: 5vw;
+        max-width: 65%;
+        left: 4vw;
+    }
+
+    .Header-content h2 {
+        font-size: 4.5vw;
+    }
+
+    .Header-content p {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .Header-content button {
+        font-size: 1.5vw;
+        padding: 1.2vw 2.5vw;
+    }
+}
+
+/* Below 600px (mobile devices) */
+@media (max-width: 600px) {
+    .Header {
+        height: 60vw;
+    }
+
+    .Header-content {
+        max-width: 80%;
+        left: 3vw;
+        top: 4vw;
+    }
+
+    .Header-content h2 {
+        font-size: 5vw;
+    }
+
+    .Header-content p {
+        font-size: 2.8vw;
+        margin-bottom: 2vw;
+        
+    }
+
+    .Header-content button {
+        font-size: 2.5vw;
+        padding: 2vw 4vw;
+    }
+}

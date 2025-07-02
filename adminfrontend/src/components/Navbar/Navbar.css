@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline:1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+} 
+.navbar img{
+    height:7vw;
+    width:7vw;
+}
+.navbar .heading{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+}
+.navbar h2{
+    font-size: 2rem;
+}
+.navbar .profile{
+    width:5vw;
+    height: 5vw;
+    border-width: 3px;
+    border-color: black;
+    border-style: dashed;
+    border-radius: 50%;
+    padding:0.4vw;
+
+}

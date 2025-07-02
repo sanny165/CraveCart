@@ -1,0 +1,63 @@
+/* Base Styles */
+.exploreitems h1,
+.exploreitems p {
+    margin: 1.2vw 0;
+}
+
+.exploreitems h1 {
+    font-weight: 500;
+}
+
+#paragh {
+    font-size: 1.8rem;
+    max-width: 75%;
+}
+
+.exploreitemslist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.exploreitemslist::-webkit-scrollbar {
+    display: none;
+}
+
+.exploreitemslist img {
+    height: 8.4vw;
+    width: 8.4vw;
+    min-width: 80px;
+    min-height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.itemslist {
+    margin: 1vw;
+}
+
+.exploreitemslist p {
+    margin-top: 10px;
+    font-size: max(1.4vw, 1.6rem);
+    cursor: pointer;
+}
+
+.exploreitems hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #c4c0c0;
+    border: 0;
+}
+
+.itemslist .active {
+    padding: 1.5px;
+    border: 4px solid;
+}
+
+

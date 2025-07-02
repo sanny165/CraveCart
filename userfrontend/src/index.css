@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+  --theme-color:#21063e;
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+/*universal means for all elements removing any default settings given so tht can design everything by own*/
+
+html{
+  font-size: 62.5%; /*10px*/
+}
+
+body{
+  min-width:100vw;
+  font-size: 1.6rem;
+}
+/*so tht extends to full width*/
+a{
+  text-decoration: none;
+  color:inherit;
+}
+/*to remove default underline and set color to color of prev elements*/
+
+.app{
+  width:80%;
+  margin:0 auto;
+}
+
+@keyframes fadein{
+  0%{opacity:0;}
+  100%{opacity: 100;}
+}

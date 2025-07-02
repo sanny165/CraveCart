@@ -1,0 +1,17 @@
+.fooddisplay{
+    margin-top: 3vw;
+}
+
+.fooddisplay h2{
+    font-size:max(2vw,2.4rem);
+    font-weight:600;
+}
+.fooddisplaylist{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); /*to decide no of rows n cols*/
+    margin-top: 2.5vw;
+    gap:2vw;
+    row-gap: 3vw;
+
+
+}

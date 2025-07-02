@@ -22,7 +22,7 @@ const Navbar = ({showlogin,setshowlogin}) => {
       <div className="navbar-left">
         <Link to="/" onClick={()=>setmenu("home")}>
           <img src={assets.logo} id="logo" alt="logo"/>
-          <h1>CraveCart</h1>
+          <h1>Crave<span>Cart</span></h1>
         </Link>
         
       </div>
@@ -45,7 +45,7 @@ const Navbar = ({showlogin,setshowlogin}) => {
               : <div className='navbar-profile'>
                 <img src={assets.profile_icon}/>
                 <ul className='nav-profile-dropdown'>
-                  <Link to='./myorders'><img src={assets.bag_icon}/><p>Orders</p></Link>
+                  <li><Link to='./myorders'><img src={assets.bag_icon}/><p>Orders</p></Link></li>
                   <hr/>
                   <li onClick={logout}><img src={assets.logout_icon}/><p>Logout</p></li>
                   </ul></div>

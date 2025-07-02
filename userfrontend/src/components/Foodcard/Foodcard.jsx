@@ -4,12 +4,27 @@ import "./Foodcard.css";
 import { assets } from "../../assets/assets";
 import storecontextprovider, { Storecontext } from "../../context/Storecontext";
 
-const Foodcard = ({ _id, name, price, description, image }) => {
+const Foodcard = ({ _id, name, price, description, image,category }) => {
   const { cartitems, setcartitems, addtocart, removefromcart,url } =
     useContext(Storecontext);
+
+  const [showIngredients, setShowIngredients] = useState(false);
+  let hoverTimeout;
+
+  const handleMouseEnter = () => {
+    hoverTimeout = setTimeout(() => {
+      setShowIngredients(true);
+    }, 300); 
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimeout);
+    setShowIngredients(false);
+  };  
     
   return (
-    <div className="fooditem">
+    <div className="fooditem" onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
       <div className="fooditemimgcont">
         <img src={`${url}/image/${image}`} alt="" className="fooditemimg" />
         {!cartitems[_id] || cartitems[_id] === 0 ? (
@@ -43,6 +58,12 @@ const Foodcard = ({ _id, name, price, description, image }) => {
           <p className="fooditemprice">₹{price}</p>
           <img src={assets.rating_stars} alt="" />
         </div>
+        <p className="fooditemdesc"></p>
+        {showIngredients && (<div className="fooditem-reveal"><div>Delicious and healthy</div>Ingredients:{" "}
+    {category === "Deserts" || category === "Cake"
+      ? "Milk, Sugar, Nuts"
+      : "Tomato, Cheese, Basil"}</div>
+      )}
       </div>
     </div>
   );

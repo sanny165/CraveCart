@@ -1,6 +1,7 @@
 .Header {
     height: 34vw;
     margin: 1.5vw auto;
+    margin-top:0.5vw;
     background: url('../../assets/header.jpg') no-repeat;
     background-size: cover;
     position: relative;
@@ -41,6 +42,9 @@
     border-radius: 5px;
     font-weight: 500;
     font-size: 1vw;
+    background-color:rgb(255, 77, 0);
+    color: white;
+    font-size: 1.7rem;
 }
 
 /* ------------ Responsive Media Queries ------------ */

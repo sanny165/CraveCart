@@ -4,9 +4,32 @@
     margin: auto;
     border-radius: 15px;
     box-shadow: 0 0 10px #00000015;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 1s;
+    overflow: hidden;
 }
+
+.fooditem:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fooditem-reveal {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1.3rem;
+  color: #333;
+  transition: opacity 7s ease-in-out, max-height 5s ease-in-out;
+  padding-top: 0.5rem;
+} 
+ 
+
+.fooditem:hover .fooditem-reveal {
+  opacity: 1;
+  max-height: 100px;
+}
+
 
 .fooditemimg {
     width: 100%;
@@ -69,13 +92,13 @@
     padding: 1px 4px;
     display: flex;
     align-items: center;
-    gap: 1.7vw;
+    gap: 1.2vw;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .food-item-counter img {
-    width: 4vw;
-    height: 4vw;
+    width: 2.5vw;
+    height: 2.5vw;
     border-radius: 50%;
 }
 

@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+
+.navbar-left span{
+    color: rgb(255, 77, 0);
+}
+
 #logo {
     height: 120px;
     width: 120px;
@@ -27,7 +32,7 @@
 }
 
 .navbar .active {
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid rgb(255, 77, 0);
 }
 
 .navbar-left a {
@@ -79,32 +84,35 @@
 .navbar-profile{
     position:relative;
 }
-.nav-profile-dropdown{
+.navbar-profile .nav-profile-dropdown{
     position:absolute;
     right:0;
     display:none;
     z-index: 1;
+    min-width:min-content;
 }
 .navbar-profile:hover .nav-profile-dropdown{
     display: flex;
     flex-direction: column;
-    gap:1vw;
+    gap:0.2vw;
     background-color: #fff2ef;
-    padding:1.5vw 2vw;
+    padding:1vw 1vw;
     border-radius: 4px;
     border:1px solid rgb(2, 2, 59);
     outline:2px solid white;
     list-style: none;
+    width:3vw;
 }
-.nav-profile-dropdown li{
+.navbar-profile .nav-profile-dropdown li{
     display: flex;
-    gap:1vw;
+    gap:0.7vw;
     align-items: center;
     cursor: pointer;
+    min-width:min-content;
 }
-.nav-profile-dropdown img{
-    width:5vw;
+.navbar-profile .nav-profile-dropdown img{
+    width:1.7vw;
 }
-.nav-profile-dropdown li:hover{
+.navbar-profile .nav-profile-dropdown li:hover{
     color: #49557e;
 }

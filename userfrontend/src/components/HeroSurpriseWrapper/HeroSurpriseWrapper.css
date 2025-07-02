@@ -1,0 +1,25 @@
+.hero-surprise-wrapper {
+  display: flex;
+  gap: 2vw;
+  margin: 2rem auto;
+  margin-left: 0vw;
+  max-width: 95%;
+  justify-content: center;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+/* You can optionally enforce equal width */
+.left-section {
+  width: 50%;
+}
+
+.right-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

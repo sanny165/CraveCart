@@ -4,7 +4,7 @@ import {Storecontext} from '../../context/Storecontext'
 import axios from 'axios'
 import {assets} from '../../assets/assets'
 import Loader from '../../components/Loader/Loader'
-import './MyOrders.css'
+import './Orders.css'
 
 const MyOrders = () => {
     const [data,setData] = useState([])

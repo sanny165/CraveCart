@@ -26,7 +26,7 @@ const Verify = () => {
                 navigate('/')
             }
             else{
-                navigate('/myorders')
+                navigate('/orders')
             }
             
         } catch (error) {

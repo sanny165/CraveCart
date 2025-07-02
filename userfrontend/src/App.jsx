@@ -9,8 +9,8 @@ import Footer from './components/Footer/Footer'
 import Loginpopup from './components/Loginpopup/Loginpopup'
 import {useState} from 'react'
 import {ToastContainer} from 'react-toastify'
-import Verify from './screens/Verify/Verify'
-import MyOrders from './screens/MyOrders/MyOrders'
+import Verify from './screens/Verify/Veri'
+import MyOrders from './screens/MyOrders/Orders'
 
 
 const App = () => {

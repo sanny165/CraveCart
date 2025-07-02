@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import "./App.css"
 import Cart from './screens/Cart/Cart'
 import Home from './screens/Home/Index'
-import Placeorder from './screens/Placeorder/Placeorder'
+import Placeorder from './screens/Placeorder/Place'
 import Footer from './components/Footer/Footer'
 import Loginpopup from './components/Loginpopup/Loginpopup'
 import {useState} from 'react'

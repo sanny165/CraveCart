@@ -28,7 +28,7 @@ const Foodcard = ({ _id, name, price, description, image,category }) => {
       <div className="fooditemimgcont">
         <img src={`${url}/image/${image}`} alt="" className="fooditemimg" />
         {!cartitems[_id] || cartitems[_id] === 0 ? (
-  <img
+  <img id="plus"
     onClick={() => addtocart(_id)}
     src={assets.add_icon_white}
     className="add"

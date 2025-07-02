@@ -116,3 +116,104 @@
 .navbar-profile .nav-profile-dropdown li:hover{
     color: #49557e;
 }
+
+/* Responsive navbar styles */
+
+@media (max-width: 1024px) {
+  .navbar-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar-bw {
+    gap: 15px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar button {
+    font-size: 1.4rem;
+    padding: 8px 20px;
+  }
+
+  #logo {
+    height: 90px;
+    width: 90px;
+  }
+
+  .navbar-profile .nav-profile-dropdown {
+    width: 5vw;
+  }
+
+  .navbar-profile .nav-profile-dropdown img {
+    width: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    padding: 15px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-left h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-bw {
+    display: none
+  }
+
+  
+
+  .navbar-profile .nav-profile-dropdown {
+    width: 100%;
+    padding: 2vw;
+  }
+
+  .navbar-profile .nav-profile-dropdown img {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo {
+    height: 63px;
+    width: 63px;
+  }
+
+  .navbar-left h1 {
+    font-size: 2.4rem;
+  }
+
+  .navbar-bw {
+    display: none;
+  }
+
+  .navbar button {
+    font-size: 1.1rem;
+    padding: 6px 15px;
+  }
+
+  .navbar-profile .nav-profile-dropdown {
+    padding: 3vw;
+    width: 100%;
+  }
+
+  .navbar-profile .nav-profile-dropdown li {
+    font-size: 0.9rem;
+  }
+
+  .navbar-profile .nav-profile-dropdown img {
+    width: 6vw;
+  }
+}

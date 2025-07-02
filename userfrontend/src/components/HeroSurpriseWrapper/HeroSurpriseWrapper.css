@@ -23,3 +23,30 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .hero-surprise-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-surprise-wrapper {
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+  }
+}
+

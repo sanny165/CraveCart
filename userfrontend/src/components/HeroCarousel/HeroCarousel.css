@@ -14,6 +14,7 @@
   border-radius: 12px;
   text-align: center;
   border:1px solid white;
+  align-items: center;
 }
 
 .overlay h1 {
@@ -46,9 +47,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  position: absolute;
-  justify-content: flex-start; /* align items to the left */
-  padding-left: 60px;
+  position: absolute; /* align items to the left */
 }
 
 /* Optional: dark overlay over the background image */
@@ -78,4 +77,70 @@
 
 .overlay p {
   font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-carousel {
+    height: 30vw;
+  }
+
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay p {
+    font-size: 1.4rem;
+  }
+
+  .overlay {
+    padding: 20px 40px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 45vw;
+  }
+
+  .carousel-slide {
+    padding-left: 30px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay p {
+    font-size: 1.1rem;
+  }
+
+  .overlay {
+    padding: 15px 25px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-carousel {
+    height: 60vw;
+  }
+
+  .carousel-slide {
+    padding-left: 20px;
+  }
+
+  .overlay {
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+
+  .overlay h1 {
+    font-size: 1.4rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+    
+  }
 }

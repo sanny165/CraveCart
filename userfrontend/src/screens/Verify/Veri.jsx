@@ -1,5 +1,5 @@
 import React from 'react'
-import './Verify.css'
+import './Veri.css'
 import { Storecontext}  from '../../context/Storecontext'
 import { useSearchParams,useNavigate } from 'react-router-dom'
 import Loader from '../../components/Loader/Loader'

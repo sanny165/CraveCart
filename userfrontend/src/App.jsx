@@ -3,14 +3,14 @@ import {Routes,Route} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import "./App.css"
 import Cart from './screens/Cart/Cart'
-import Home from './screens/home/home'
-import Placeorder from './screens/placeorder/Placeorder'
+import Home from './screens/Home/Home'
+import Placeorder from './screens/Placeorder/Placeorder'
 import Footer from './components/Footer/Footer'
 import Loginpopup from './components/Loginpopup/Loginpopup'
 import {useState} from 'react'
 import {ToastContainer} from 'react-toastify'
-import Verify from './screens/verify/Verify'
-import MyOrders from './screens/myOrders/MyOrders'
+import Verify from './screens/Verify/Verify'
+import MyOrders from './screens/MyOrders/MyOrders'
 
 
 const App = () => {
